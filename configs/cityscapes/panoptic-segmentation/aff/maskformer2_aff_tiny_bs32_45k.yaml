@@ -1,0 +1,22 @@
+_BASE_: ../maskformer2_R50_bs16_90k.yaml 
+MODEL:
+  BACKBONE:
+    NAME: "AutoFocusFormer"
+  AFF:
+    EMBED_DIM: [64,128,256,512]
+    DEPTHS: [3,4,18,5]
+    NUM_HEADS: [2,4,8,16]
+    DROP_PATH_RATE: 0.3
+    PATCH_NORM: True
+    MLP_RATIO: 3.
+    CLUSTER_SIZE: 8
+    NBHD_SIZE: [48,48,48,48]
+    ALPHA: 8.0
+    DS_RATE: 0.25
+  WEIGHTS: "aff_tiny.pkl"
+  PIXEL_MEAN: [123.675, 116.280, 103.530]
+  PIXEL_STD: [58.395, 57.120, 57.375]
+SOLVER:
+  IMS_PER_BATCH: 32
+  BASE_LR: 0.0002
+  MAX_ITER: 45000
