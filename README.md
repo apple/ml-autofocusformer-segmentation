@@ -2,7 +2,8 @@
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
 [![CLUSTEN](https://img.shields.io/badge/CUDA%20Extension-CLUSTEN-red)](clusten/)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/autofocusformer-image-segmentation-off-the/instance-segmentation-on-cityscapes-val)](https://paperswithcode.com/sota/instance-segmentation-on-cityscapes-val?p=autofocusformer-image-segmentation-off-the)
+
+AFF-Small: [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/autofocusformer-image-segmentation-off-the/instance-segmentation-on-cityscapes-val)](https://paperswithcode.com/sota/instance-segmentation-on-cityscapes-val?p=autofocusformer-image-segmentation-off-the)
 
 This software project accompanies the research paper, *AutoFocusFormer: Image Segmentation off the Grid* (CVPR 2023).
 
@@ -47,36 +48,36 @@ We also add a few convenient functionalities, such as visualizing prediction res
 **ADE20K Semantic Segmentation (val)**
 | backbone | method | pretrain | crop size | mIoU | FLOPs | checkpoint |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| AFF-Mini | Mask2Former | ImageNet-1K | 512x512 | 46.5 | 48.3G | [Box](https://apple.box.com/s/nvgp3fiw867qn0st2ackzr5qgkv1g5dt) |
-| AFF-Mini-1/5 | Mask2Former | ImageNet-1K | 512x512 | 46.0 | 39.9G | [Box](https://apple.box.com/s/unlt9onup1drzuy0ll8rdr82lw85k739) | 
-| AFF-Tiny | Mask2Former | ImageNet-1K | 512x512 | 50.2 | 64.6G | [Box](https://apple.box.com/s/w914lhy6rnljz8rzwqov3y2f2ualrane) | 
-| AFF-Tiny-1/5 | Mask2Former | ImageNet-1K | 512x512 | 50.0 | 51.1G | [Box](https://apple.box.com/s/hlbfzgupgq147lm2fpbclrxvbf9br4fd) | 
-| AFF-Small | Mask2Former | ImageNet-1K | 512x512 | 51.2 | 87G | [Box](https://apple.box.com/s/zsjgd1f537bgiif58jomsoxqsgjs198a) | 
-| AFF-Small-1/5 | Mask2Former | ImageNet-1K | 512x512 | 51.9 | 67.2G | [Box](https://apple.box.com/s/knbssdds7fhps7hs7wanbdy1h47ol767) | 
+| AFF-Mini | Mask2Former | ImageNet-1K | 512x512 | 46.5 | 48.3G | [Apple ML](https://docs-assets.developer.apple.com/ml-research/models/aff/segmentation/ade_sem/aff_mini.pth) |
+| AFF-Mini-1/5 | Mask2Former | ImageNet-1K | 512x512 | 46.0 | 39.9G | [Apple ML](https://docs-assets.developer.apple.com/ml-research/models/aff/segmentation/ade_sem/aff_mini_1_5th.pth) |
+| AFF-Tiny | Mask2Former | ImageNet-1K | 512x512 | 50.2 | 64.6G | [Apple ML](https://docs-assets.developer.apple.com/ml-research/models/aff/segmentation/ade_sem/aff_tiny.pth) |
+| AFF-Tiny-1/5 | Mask2Former | ImageNet-1K | 512x512 | 50.0 | 51.1G | [Apple ML](https://docs-assets.developer.apple.com/ml-research/models/aff/segmentation/ade_sem/aff_tiny_1_5th.pth) |
+| AFF-Small | Mask2Former | ImageNet-1K | 512x512 | 51.2 | 87G | [Apple ML](https://docs-assets.developer.apple.com/ml-research/models/aff/segmentation/ade_sem/aff_small.pth) |
+| AFF-Small-1/5 | Mask2Former | ImageNet-1K | 512x512 | 51.9 | 67.2G | [Apple ML](https://docs-assets.developer.apple.com/ml-research/models/aff/segmentation/ade_sem/aff_small_1_5th.pth) |
 
 **Cityscapes Instance Segmentation (val)**
 | backbone | method | pretrain | AP | checkpoint |
 | :---: | :---: | :---: | :---: | :---: |
-| AFF-Mini | Mask2Former | ImageNet-1K | 40.0 | [Box](https://apple.box.com/s/pmsx5quow1zuj8f04077dr32fqajnq9s) | 
-| AFF-Tiny | Mask2Former | ImageNet-1K | 42.7 | [Box](https://apple.box.com/s/bcsqhc930wau8d8dw98voy0m0z322hde) | 
-| AFF-Small | Mask2Former | ImageNet-1K | 44.0 | [Box](https://apple.box.com/s/s49vsrfwjkx7whaf4tm486az2kes6qj7) | 
+| AFF-Mini | Mask2Former | ImageNet-1K | 40.0 | [Apple ML](https://docs-assets.developer.apple.com/ml-research/models/aff/segmentation/city_ins/aff_mini.pth) |
+| AFF-Tiny | Mask2Former | ImageNet-1K | 42.7 | [Apple ML](https://docs-assets.developer.apple.com/ml-research/models/aff/segmentation/city_ins/aff_tiny.pth) |
+| AFF-Small | Mask2Former | ImageNet-1K | 44.0 | [Apple ML](https://docs-assets.developer.apple.com/ml-research/models/aff/segmentation/city_ins/aff_small.pth) |
 
 **Cityscapes Panoptic Segmentation (val)**
 | backbone | method | pretrain | PQ(s.s.) | checkpoint |
 | :---: | :---: | :---: | :---: | :---: |
-| AFF-Mini | Mask2Former | ImageNet-1K | 62.7 | [Box](https://apple.box.com/s/0u3ij089j2mfux4tkc0w93guzoc3353d) | 
-| AFF-Tiny | Mask2Former | ImageNet-1K | 65.7 | [Box](https://apple.box.com/s/8elap0rver05sq4hh7vv2am8tmnt24cx) | 
-| AFF-Small | Mask2Former | ImageNet-1K | 66.9 | [Box](https://apple.box.com/s/kzr33pisibgqbbpz0p8n5t1g1wzescqq) | 
+| AFF-Mini | Mask2Former | ImageNet-1K | 62.7 | [Apple ML](https://docs-assets.developer.apple.com/ml-research/models/aff/segmentation/city_pan/aff_mini.pth) |
+| AFF-Tiny | Mask2Former | ImageNet-1K | 65.7 | [Apple ML](https://docs-assets.developer.apple.com/ml-research/models/aff/segmentation/city_pan/aff_tiny.pth) |
+| AFF-Small | Mask2Former | ImageNet-1K | 66.9 | [Apple ML](https://docs-assets.developer.apple.com/ml-research/models/aff/segmentation/city_pan/aff_small.pth) |
 
 **COCO Instance Segmentation (val)**
 | backbone | method | pretrain | epochs | AP | FLOPs | checkpoint |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| AFF-Mini | Mask2Former | ImageNet-1K | 50 | 42.3 | 148G | [Box](https://apple.box.com/s/qt2beqgc28uimauj228ppuza8br1ysje) | 
-| AFF-Mini-1/5 | Mask2Former | ImageNet-1K | 50 | 42.3 | 120G | [Box](https://apple.box.com/s/ktb25um52x5n6quhw6s4tpobe2ysx0l3) | 
-| AFF-Tiny | Mask2Former | ImageNet-1K | 50 | 45.3 | 204G | [Box](https://apple.box.com/s/lfta4x12bxf63l2x5iwpl2dmvamvvbde) | 
-| AFF-Tiny-1/5 | Mask2Former | ImageNet-1K | 50 | 44.5 | 152G | [Box](https://apple.box.com/s/34wn40yyhzyp83mtyqaj1xpd1v9vodex) | 
-| AFF-Small | Mask2Former | ImageNet-1K | 50 | 46.4 | 281G | [Box](https://apple.box.com/s/fsn3blcjnsej0evrwuyig0wcvg07v6dx) | 
-| AFF-Small-1/5 | Mask2Former | ImageNet-1K | 50 | 45.7 | 206G | [Box](https://apple.box.com/s/g6vte0c9vhyt3kbga8lt46e5xyertre7) | 
+| AFF-Mini | Mask2Former | ImageNet-1K | 50 | 42.3 | 148G | [Apple ML](https://docs-assets.developer.apple.com/ml-research/models/aff/segmentation/coco_ins/aff_mini.pth) |
+| AFF-Mini-1/5 | Mask2Former | ImageNet-1K | 50 | 42.3 | 120G | [Apple ML](https://docs-assets.developer.apple.com/ml-research/models/aff/segmentation/coco_ins/aff_mini_1_5th.pth) |
+| AFF-Tiny | Mask2Former | ImageNet-1K | 50 | 45.3 | 204G | [Apple ML](https://docs-assets.developer.apple.com/ml-research/models/aff/segmentation/coco_ins/aff_tiny.pth) |
+| AFF-Tiny-1/5 | Mask2Former | ImageNet-1K | 50 | 44.5 | 152G | [Apple ML](https://docs-assets.developer.apple.com/ml-research/models/aff/segmentation/coco_ins/aff_tiny_1_5th.pth) |
+| AFF-Small | Mask2Former | ImageNet-1K | 50 | 46.4 | 281G | [Apple ML](https://docs-assets.developer.apple.com/ml-research/models/aff/segmentation/coco_ins/aff_small.pth) |
+| AFF-Small-1/5 | Mask2Former | ImageNet-1K | 50 | 45.7 | 206G | [Apple ML](https://docs-assets.developer.apple.com/ml-research/models/aff/segmentation/coco_ins/aff_small_1_5th.pth) |
 
 ## Getting Started
 
