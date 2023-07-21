@@ -63,20 +63,20 @@ cityscapes/
     val/
     test/
 ```
-Install cityscapes scripts by:
+Download cityscapes scripts by:
 ```
-pip install git+https://github.com/mcordts/cityscapesScripts.git
+git clone https://github.com/mcordts/cityscapesScripts.git
 ```
 
 Note: to create labelTrainIds.png, first prepare the above structure, then run cityscapesescript with:
 ```
-CITYSCAPES_DATASET=/path/to/abovementioned/cityscapes python cityscapesscripts/preparation/createTrainIdLabelImgs.py
+CITYSCAPES_DATASET=/path/to/abovementioned/cityscapes python cityscapesScripts/cityscapesscripts/preparation/createTrainIdLabelImgs.py
 ```
 These files are not needed for instance segmentation.
 
 Note: to generate Cityscapes panoptic dataset, run cityscapesescript with:
 ```
-CITYSCAPES_DATASET=/path/to/abovementioned/cityscapes python cityscapesscripts/preparation/createPanopticImgs.py
+CITYSCAPES_DATASET=/path/to/abovementioned/cityscapes python cityscapesScripts/cityscapesscripts/preparation/createPanopticImgs.py
 ```
 These files are not needed for semantic and instance segmentation.
 
