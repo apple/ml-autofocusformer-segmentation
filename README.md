@@ -61,7 +61,7 @@ We also add a few convenient functionalities, such as visualizing prediction res
 | AFF-Mini | Mask2Former | ImageNet-1K | 40.0 | [Apple ML](https://docs-assets.developer.apple.com/ml-research/models/aff/segmentation/city_ins/aff_mini.pth) |
 | AFF-Tiny | Mask2Former | ImageNet-1K | 42.7 | [Apple ML](https://docs-assets.developer.apple.com/ml-research/models/aff/segmentation/city_ins/aff_tiny.pth) |
 | AFF-Small | Mask2Former | ImageNet-1K | 44.0 | [Apple ML](https://docs-assets.developer.apple.com/ml-research/models/aff/segmentation/city_ins/aff_small.pth) |
-| AFF-Base | Mask2Former | ImageNet-22K | 46.2 | Available soon |
+| AFF-Base | Mask2Former | ImageNet-22K | 46.2 | [Apple ML](https://docs-assets.developer.apple.com/ml-research/models/aff/segmentation/city_pan/aff_base_22kto1k_384.pth) |
 
 **Cityscapes Panoptic Segmentation (val)**
 | backbone | method | pretrain | PQ(s.s.) | checkpoint |
@@ -69,7 +69,7 @@ We also add a few convenient functionalities, such as visualizing prediction res
 | AFF-Mini | Mask2Former | ImageNet-1K | 62.7 | [Apple ML](https://docs-assets.developer.apple.com/ml-research/models/aff/segmentation/city_pan/aff_mini.pth) |
 | AFF-Tiny | Mask2Former | ImageNet-1K | 65.7 | [Apple ML](https://docs-assets.developer.apple.com/ml-research/models/aff/segmentation/city_pan/aff_tiny.pth) |
 | AFF-Small | Mask2Former | ImageNet-1K | 66.9 | [Apple ML](https://docs-assets.developer.apple.com/ml-research/models/aff/segmentation/city_pan/aff_small.pth) |
-| AFF-Base | Mask2Former | ImageNet-22K | 67.7 | Available soon |
+| AFF-Base | Mask2Former | ImageNet-22K | 67.7 | [Apple ML](https://docs-assets.developer.apple.com/ml-research/models/aff/segmentation/city_pan/aff_base_22kto1k_384.pth) |
 
 **COCO Instance Segmentation (val)**
 | backbone | method | pretrain | epochs | AP | FLOPs | checkpoint |
